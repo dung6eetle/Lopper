@@ -41,9 +41,7 @@ header {
   padding-top: 61px;
   padding-bottom: 36px;
 }
-.left {
-  
-}
+
 .logo {
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
@@ -52,6 +50,7 @@ header {
 }
 
 /*   NAV   */
+
 #checkbox-menu {
   display: none;
 }
@@ -103,6 +102,7 @@ ul {
 }
 
 /* INTRO */
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -168,6 +168,7 @@ ul {
 }
 
 /* TEAM */
+
 .team {
   background-color: #150433;
   min-height: 1080px;
@@ -207,14 +208,33 @@ ul {
   color:#FCFCFC;
   opacity: 0.5;
 }
+.item__icons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.item__icon {
+  padding: 8px 20px;
+}
+
 /* SOLO */
 .solo {
+  border-bottom: 2px solid #F61067;
+  width: 100%;
+}
+.solo__container {
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   max-width: 755px;
   margin-top: -120px;
+  z-index: 100;
+}
+.solo_rounds {
+  position: absolute;
+  z-index: 1;
+  padding-top: 100px;
 }
 .quotes {
   margin-top: -40px;
@@ -233,8 +253,57 @@ ul {
   font-size: 18px;
   line-height: 29px;
   font-family: 'Roboto', sans-serif;
+  padding-bottom: 136px;
 }
 .solo__subtitle span {
   font-weight: 800;
   color: #F61067;
 }
+.solo__border {
+  border-bottom: 2px solid #F61067;
+  width: 100%;
+}
+/* SUBSCRIBE */
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 162px;
+}
+.subscribe__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 67px;
+  padding-bottom: 19px;
+}
+.subscribe__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color:#776C82;
+}
+.input__block {
+  padding-top: 55px;
+  
+}
+.input__block input {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 37px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-right: 174px;
+}
+.input__block button {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 26px;
+  align-items: center;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+} 
