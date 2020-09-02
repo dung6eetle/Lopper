@@ -263,6 +263,13 @@ ul {
   border-bottom: 2px solid #F61067;
   width: 100%;
 }
+/* SOLO SLIDER */
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
 /* SUBSCRIBE */
 
 .subscribe {
@@ -271,6 +278,7 @@ ul {
   justify-content: center;
   text-align: center;
   padding-top: 162px;
+  padding-bottom: 141px;
 }
 .subscribe__title {
   font-family: 'Roboto', sans-serif;
@@ -287,9 +295,13 @@ ul {
 }
 .input__block {
   padding-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   
 }
-.input__block input {
+.input input{
   font-family: 'Roboto', sans-serif;
   border: none;
   font-size: 18px;
@@ -299,11 +311,21 @@ ul {
   text-transform: uppercase;
   padding-right: 174px;
 }
-.input__block button {
+.input__subscribe {
+  display: flex;
+  flex-flow: row;
+  background-color: #F4F4ED;
+  padding: 5px 5px;
+  align-items: center;
+  text-transform: uppercase;
+} 
+.text-subscribe {
+  font-family: 'Roboto', sans-serif;
+  color: #F61067;
   font-weight: 800;
   font-size: 12px;
   line-height: 26px;
-  align-items: center;
   letter-spacing: 6px;
-  text-transform: uppercase;
-} 
+  padding-right: 20px;
+  padding-left: 28px;
+}
