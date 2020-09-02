@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   display: block;
   min-height: 100vh;
   min-width: 1440px;
@@ -44,7 +45,6 @@ header {
 
 .logo {
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #5e239d;
 }
@@ -76,7 +76,6 @@ ul {
 }
 .navigation__item {
   display: block;
-  font-family: 'Roboto', sans-serif;
   margin-right:54px;
   font-size: 14px;
   font-weight: 800;
@@ -92,7 +91,6 @@ ul {
   padding-right: 18px;
 }
 .number {
-  font-family: 'Roboto', sans-serif;
   margin-right:54px;
   font-size: 14px;
   font-weight: 800;
@@ -113,7 +111,6 @@ ul {
   min-height: 360px;
 }
 .ourteam__title {
-  font-family: 'Roboto', sans-serif;
   position: relative;
   color: #F61067;
   font-weight: 500;
@@ -123,7 +120,6 @@ ul {
   padding-bottom: 9px;
 }
 .ourteam__subtitle {
-  font-family: 'Roboto', sans-serif;
   color: #F4F4ED;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -150,7 +146,6 @@ ul {
   padding-bottom: 12px;
 }
 .ourteam__block_subtitle {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 45px;
   line-height: 67px;
@@ -159,7 +154,6 @@ ul {
   padding-bottom: 23px;
 }
 .ourteam__block_description {
-  font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 29px;
@@ -191,7 +185,6 @@ ul {
   padding-bottom: 22px;
 }
 .item__title { 
-  font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 21px;
   line-height: 35px;
@@ -199,7 +192,6 @@ ul {
   color: #fff;
 }
 .item__subtitle {
-  font-family: 'Roboto', sans-serif;
   font-weight: 1000;
   font-size: 12px;
   line-height: 26px;
@@ -252,7 +244,6 @@ ul {
   font-style: normal;
   font-size: 18px;
   line-height: 29px;
-  font-family: 'Roboto', sans-serif;
   padding-bottom: 136px;
 }
 .solo__subtitle span {
@@ -269,6 +260,25 @@ ul {
 }
 .slide.active {
   display: block;
+  z-index: 100;
+}
+.btn {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  z-index: 10;
+}
+.btn-next {
+  position: absolute;
+  cursor: pointer;
+  text-align: right;
+  left: 100%;
+  
+
+}
+.btn-prev {
+  position: absolute;
+  cursor: pointer;
 }
 /* SUBSCRIBE */
 
@@ -281,7 +291,6 @@ ul {
   padding-bottom: 141px;
 }
 .subscribe__title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 45px;
   line-height: 67px;
@@ -302,7 +311,6 @@ ul {
   
 }
 .input input{
-  font-family: 'Roboto', sans-serif;
   border: none;
   font-size: 18px;
   font-weight: 800;
@@ -320,7 +328,6 @@ ul {
   text-transform: uppercase;
 } 
 .text-subscribe {
-  font-family: 'Roboto', sans-serif;
   color: #F61067;
   font-weight: 800;
   font-size: 12px;
@@ -328,4 +335,90 @@ ul {
   letter-spacing: 6px;
   padding-right: 20px;
   padding-left: 28px;
+}
+
+/* FOOTER */
+.footer-background {
+  background-color: #150433;
+}
+.footer {
+  color: #FCFCFC;
+  padding-top: 126px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu-column {
+  max-width: 55px;
+  display: flex;
+  flex-flow: column;
+}
+.services-column {
+  max-width:100px;
+  display: flex;
+  flex-flow: column;
+}
+.contact-column {
+  max-width: 270px;
+}
+.column-contact-block {
+ padding-top: 43px;
+ max-width: 170px;
+}
+.column-subtitle-icons {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+.contact-icons {
+  padding-right: 15px;
+}
+.lopper-column-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 43px;
+}
+.lopper-column-subtitle {
+  padding-top: 17px;
+  max-width: 166px;
+  font-weight: normal;
+  color:#FCFCFC;
+  font-size: 16.2px;
+  line-height: 26px;
+}
+.follow-icons {
+  display: flex;
+  flex-flow: row;
+  padding: 45px 0px;
+}
+.f-icon {
+  padding-right: 42px;
+}
+.column-title {
+ padding-bottom: 15px;
+ font-weight: 800;
+ font-size: 12.6px;
+ line-height: 26px;
+ letter-spacing: 6px;
+ text-transform: uppercase;
+ border-bottom: 1px solid #F61067;
+ display: inline;
+}
+.column-subtitle {
+  padding-top: 27px;
+  font-weight: bold;
+  font-size: 12.6px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  max-width: 70px;
+}
+.company-tag {
+  font-weight: normal;
+  font-size: 11.7px;
+  line-height: 19px;
+  color: #FCFCFC;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 120px;
 }
