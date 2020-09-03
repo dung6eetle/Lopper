@@ -224,12 +224,21 @@
             <div class="btn-next" id="btn-next"><img src="/img/btn-next.svg"></div>
           </div>
         </div>
-
+  
         <div class="quotes"><img src="./img/quotes.svg"></div>
         <div class="solo__dicription">
         Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
         </div>
         <div class="solo__subtitle"><span>Kerry Johnes</span> - Some Company</div>
+
+        <div class="drop" id="drop-area">
+          <form class="my-form">
+            <p>Загрузите изображения с помощью диалога выбора файлов или перетащив нужные изображения в выделенную область</p>
+            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+            <label class="button" for="fileElem">Выбрать изображения</label>
+          </form>
+          <div id="gallery"></div>
+        </div>
       </div>
     </div>
     <div class="subscribe">
@@ -286,6 +295,7 @@
     <div class="company-tag">© 2019 Lopper by mariuszdaniel. All right reserved.</div>
   </div>
   <script src="main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 </body>
 
 </html>
